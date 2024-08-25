@@ -1,0 +1,1233 @@
+* {
+  box-sizing: border-box;
+}
+
+.spotfinder-logo {
+  width: 4%;
+  height: auto;
+  margin-right: 5px;
+}
+
+/* General styling for the navbar background */
+.custom-navbar {
+  background-color: rgba(45, 44, 44, 0.956); /* light blue */
+}
+
+/* White text for the navbar brand and links */
+.custom-navbar .navbar-light .navbar-brand,
+.custom-navbar .navbar-light .nav-link {
+  color: white;
+}
+
+.navbar-brand span:hover {
+  color: white;
+}
+
+.navbar-brand span {
+  color: white;
+}
+
+/* Header Component: profile link /img*/
+.user-profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.nav-top .nav-link-log {
+  color: white;
+  margin-left: 8px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust the height as needed */
+}
+
+.nav-link-top {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-top .nav-link-top {
+  color: #f4f2f2;
+  font-size: 13px;
+}
+
+/* Setting base color for .nav-link under .sub-navbar */
+.nav-link:hover {
+  color: #f3efef;
+}
+
+.nav-top .nav-link-top .github-icon {
+  margin-right: 9px;
+  /* width: auto; */
+  font-size: 20px;
+}
+
+/* Ensuring visited .nav-link elements under .sub-navbar retain the dark color */
+
+/* Profile Component styling */
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.profile-left,
+.profile-middle,
+.profile-right {
+  flex: 1;
+  margin: 0 20px;
+}
+/* Profile-Details Styling */
+/* Profile Details Styling following GitHub Theme */
+
+.profile-details-container {
+  flex: 1; /* Adjust this value to be less if you want it to be narrower */
+  /* Other styles if needed */
+  margin-right: 20px; /* Add some spacing between the two containers */
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid #e1e4e8;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.profile-details h2,
+.profile-details h3,
+.profile-details p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.profile-details h3 {
+  font-weight: 600;
+}
+
+.profile-details a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.profile-details a:hover {
+  text-decoration: underline;
+}
+
+/* Specific style for the profile preferences container */
+.profile-pref-container {
+  flex: 1;
+  margin: 0;
+}
+
+.profile-pref-container button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2ea44f;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-pref-container button:hover {
+  background-color: #2a8f47;
+}
+
+/*Profile Component:: user-preferences section:*/
+.user-preferences {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  border: 1px solid #e1e4e8; /* Light gray border color used in GitHub */
+  border-radius: 6px; /* Slightly rounded corners */
+  padding: 16px; /* Some padding inside the container */
+  margin-top: 20px; /* Space from the content above it */
+  color: #24292e;
+  background-color: #ffffff;
+  margin: 60;
+}
+
+.user-preferences .user-preferences-edit-btn {
+  background: none; /* Removes the background */
+  border: none; /* Removes the border */
+  color: #0366d6; /* Sets the text color, use whatever color you like */
+  padding: 0; /* Removes padding */
+  font: inherit; /* Inherits font properties from the parent */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  text-decoration: none; /* Ensures there is no underline by default */
+}
+
+.user-preferences .user-preferences-edit-btn:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+.user-preferences-header {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 10px;
+}
+
+.user-preferences-content label {
+  display: block;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.user-preferences-content select,
+.user-preferences-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.user-preferences-content input[type="checkbox"] {
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.user-preferences-content input[type="checkbox"]:checked {
+  background-color: #0366d6;
+}
+
+.user-preferences-content .user-preferences-save-btn {
+  background-color: #2ea44f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.user-preferences-content .user-preferences-save-btn:hover {
+  background-color: #2a8f47;
+}
+
+.user-preferences-content .user-preferences-cancel-btn {
+  background-color: #adb0ad;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.user-preferences-content .user-preferences-cancel-btn:hover {
+  background-color: #232323;
+}
+
+.user-preferences-content button:last-of-type {
+  margin-right: 0;
+}
+
+/*Profile Project Card: Component displays tracked projects*/
+.profile-projects-container {
+  flex: 2;
+}
+
+.sort-options h2 {
+  white-space: nowrap; /* Prevents the title from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  flex-grow: 1; /* Allows the title to grow and fill space */
+  margin-right: 20px; /* Ensures spacing between title and sort controls */
+}
+
+/*Profile Project Card:: Sort options styling*/
+/* Style for the sorting options container */
+.sort-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Spacing below the sorting options */
+}
+
+.sort-options h2 {
+  font-weight: 600;
+}
+
+/* Style for the select element */
+/* Container for sort controls to keep them together */
+.sort-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the select element */
+.sort-controls select {
+  padding: 6px 12px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  background-color: #fafbfc;
+  color: #24292e;
+  cursor: pointer;
+}
+
+/* Style for buttons */
+.sort-controls button {
+  padding: 4px 6px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  background-color: #fafbfc;
+  color: #24292e;
+  cursor: pointer;
+  margin-left: 10px; /* Spacing between select and button */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sort-controls button:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+}
+
+/*Profile Project Card*/
+.profile-project-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 16px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.profile-project-card button {
+  background: none;
+  border: none;
+  color: #0366d6; /* Adjust the color to match your theme */
+  padding: 4px 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.profile-project-card button:hover {
+  text-decoration: underline;
+}
+
+.profile-project-header {
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+  align-items: center;
+}
+
+.profile-project-header h3 {
+  margin: 1; /* Remove default margin */
+  flex-grow: 2; /* Allows the title to take up available space */
+  /* Ensure there's some margin to separate it from the next element */
+  margin-right: 10px;
+}
+
+.profile-project-header p {
+  /* If you want the paragraph to be flexible as well: */
+  flex-grow: 0; /* Adjust as needed, or remove if fixed width is desired */
+  margin: 0; /* Remove default margin */
+  /* Ensure there's some margin to separate it from the next element */
+  margin-right: 12px;
+}
+
+.profile-project-header button {
+  flex-grow: 0; /* Do not allow the button to grow */
+  margin: 0; /* Remove default margin */
+  /* Additional button styling here */
+  margin-bottom: 3px;
+}
+
+.profile-project-details {
+  margin-top: 10px;
+  flex-grow: 1; /* This will make the details take up the remaining space */
+  /* ... other styles ... */
+}
+
+.project-header:hover {
+  background-color: #f6f8fa;
+}
+
+.project-details {
+  border-top: 1px solid #e1e4e8;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* Landing Component Styling*/
+/* General Styles */
+.landing-container {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* This ensures the container takes the full height of the viewport */
+}
+
+.landing-page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #24292e;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.landing-page a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.landing-page a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.landing-header {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.landing-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Sections */
+.landing-description,
+.landing-resources,
+.landing-wiki,
+.landing-search,
+.landing-signup {
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.landing-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.landing-resources li {
+  margin-bottom: 10px;
+}
+
+/*SearchPage Component styling*/
+/* Additional SearchPage styling */
+/* Recommended Projects: */
+.recommended-projects {
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.recommended-projects h3 {
+  font-weight: 600;
+}
+
+.recommended-projects div:last-child {
+  border-bottom: #000;
+}
+
+.recommended-projects div {
+  padding: 4px 0;
+  /* border-bottom: 1px solid #e1e4e8; */
+}
+/* Adjust the carousel window height */
+.slick-slider {
+  max-height: 200px; /* Adjust this value as needed */
+}
+
+/* Style for the previous button */
+.recommended-projects .slick-prev {
+  left: -30px; /* Adjust this value as needed for alignment */
+  z-index: 1;
+}
+
+/* Style for the next button */
+.recommended-projects .slick-next {
+  right: -30px; /* Adjust this value as needed for alignment */
+  z-index: 1;
+}
+
+.recommended-project-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines you want to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em; /* Adjust as needed */
+  max-height: 3.6em; /* Line-height multiplied by line number */
+  margin: 0; /* Adjust or remove as needed */
+  max-width: 250px;
+}
+
+/* General style adjustments for the buttons */
+.recommended-projects .slick-prev,
+.recommended-projects .slick-next {
+  width: 45px; /* Adjust the width */
+  height: 40px; /* Adjust the height */
+  background-color: #544b4b; /* Background color */
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style adjustments for the icons inside the buttons */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px; /* Adjust the icon size */
+  color: #000; /* Icon color */
+  opacity: 1;
+}
+
+/* Container styling for the search page */
+.search-page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #24292e;
+  padding: 20px;
+}
+
+.search-container {
+  /* display: flex; */
+  align-items: center; /* this ensures vertical alignment of the input and button */
+  width: 100%; /* optional, to take up full available width */
+  padding-top: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  flex: 1; /* this allows the input to take up available space */
+  margin-right: 10px;
+}
+
+/* Styling for the search input box and button */
+.search-page input {
+  padding: 10px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  width: 90%;
+  margin-right: 10px;
+}
+
+.search-page button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ea44f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-page button:hover {
+  background-color: #2a8f47;
+}
+
+.search-params-container {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.search-params-container h3 {
+  margin-left: 9px;
+  font-weight: 600;
+}
+
+.search-params-container h4 {
+  margin-left: 9px;
+}
+
+.search-params {
+  border: 1px solid #ccc; /* You can adjust the color and width as needed */
+  padding: 10px; /* Padding to give some space inside the border */
+  border-radius: 5px; /* Optional: to give rounded corners */
+  margin: 10px 10px; /* Optional: to give some space above and below the section */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-gap: 10px; /* space between grid items */
+}
+
+.search-params,
+.search-params * {
+  box-sizing: border-box;
+}
+
+/* Styling for the search parameters section */
+.search-params h4 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.search-params > div {
+  /* ... existing styles ... */
+
+  min-width: 200px; /* This ensures that below this width, the item will wrap to the next line */
+}
+
+.search-params div {
+  display: flex;
+  flex-direction: row;
+}
+.search-params div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertical alignment */
+  margin-bottom: 3px;
+}
+
+/* Search spinner graphic while waiting for results*/
+@keyframes dots {
+  0%,
+  20% {
+    content: ".";
+  }
+  40%,
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
+}
+
+.searching-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertical alignment */
+  margin-left: 30px;
+}
+
+.searching-dots::after {
+  content: "...";
+  display: inline-block;
+  animation: dots 1s steps(5, end) infinite;
+}
+
+.no-matches {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertical alignment */
+  margin-left: 30px;
+}
+
+/* Search sort section styling */
+.search-sort {
+  /* Add some top margin for spacing from the search results header */
+  display: flex; /* New: Using flexbox to layout children horizontally */
+  align-items: center; /* New: Vertically aligns children to the center */
+  /* Aligns children to the right */
+  margin-bottom: 9px;
+}
+.search-sort h3 {
+  flex: 1;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.search-sort select,
+.search-sort button {
+  height: 53px; /* New: Define a consistent height */
+  line-height: 36px; /* New: Aligns text/icon vertically in the center */
+  /* ... other existing styles ... */
+  margin-bottom: 2px;
+}
+
+.search-sort select {
+  /* Horizontal margin */
+  padding: 7px; /* Padding to adjust the size */
+  font-size: 1rem; /* Adjusting the font size to match the dropdown */
+  border-radius: 4px; /* Optional: To make the edges rounded */
+  cursor: pointer; /* Makes it obvious that the item is clickable */
+  height: auto;
+  margin-top: 6px;
+}
+.search-sort button {
+  /* Horizontal margin */
+  padding: 0px; /* Padding to adjust the size */
+  font-size: 1rem; /* Adjusting the font size to match the dropdown */
+  border-radius: 4px; /* Optional: To make the edges rounded */
+  margin-bottom: 0px;
+  width: 46px;
+  /* Makes it obvious that the item is clickable */
+}
+
+.search-sort button {
+  background-color: #2ea44f; /* Light grey background for buttons */
+  border: 1px solid #ccc; /* Border to match the dropdown */
+}
+
+.search-sort button:hover {
+  background-color: #2ea44f; /* Darker grey when hovering */
+}
+
+/* Search Pagination section: */
+/* ... your other styles ... */
+
+.search-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-pagination button {
+  padding: 8px 15px;
+  margin: 0 10px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-pagination button:hover {
+  background-color: #f6f8fa;
+}
+
+.search-pagination button:disabled {
+  color: #a0a0a0;
+  cursor: not-allowed;
+  background-color: #f6f8fa;
+}
+
+/* If you want the sorting section to have some space from the search results, you can add a margin to the .search-results class */
+
+.search-params input[type="radio"],
+.search-params input[type="checkbox"] {
+  margin-right: 15px;
+  width: auto;
+  margin: 10;
+
+  box-sizing: border-box;
+  transform: scale(1); /* Reset any scaling */
+}
+
+/* Use a media query for smaller screens */
+@media (max-width: 600px) {
+  .search-params > div {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styling for the search results and recommended projects section */
+.search-results {
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  padding: 9px 5px 5px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.search-results div {
+  padding: 4px 0;
+}
+
+.search-results div:last-child {
+  border-bottom: #000;
+}
+
+/* Project Card Styling*/
+.project-container {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  grid-gap: 5px;
+  border: 1px solid #e1e4e8; /* You can adjust this if you want another border style/color */
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  padding: 20px;
+}
+.project-container h3 {
+  margin-bottom: 5px;
+  font-size: 2.2rem;
+  padding-left: 10px;
+}
+
+.project-container a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.project-container a:hover {
+  text-decoration: underline;
+}
+
+.project-container > div {
+  margin: 5px 0;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+.project-description {
+  margin-left: 10px;
+}
+
+.project-createdAt,
+.project-latestPull,
+.project-contributors,
+.project-stars {
+  padding-left: 5px; /* Decreased from 20px if needed */
+}
+
+.project-container .feedback {
+  background-color: rgba(0, 255, 0, 0.1); /* Slight green background */
+  padding-left: 20px;
+  font-weight: bold;
+  grid-column: span 3;
+}
+
+/* .feedback-untrack-button {
+
+} */
+
+.project-star-icon {
+  padding-bottom: 1px;
+  color: rgb(186, 63, 238);
+  margin-right: 2px;
+}
+
+.describer-text {
+  font-weight: bold; /* Makes the text bold */
+  color: #333; /* Gives a slightly darker color for emphasis */
+  margin-right: 5px; /* Provides a small gap between the describer and the data */
+}
+
+/* Project Details Card Styling */
+.project-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  grid-gap: 10px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.project-details h2 {
+  grid-column: span 3; /* This will ensure the h2 element spans the entire width */
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.project-details a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.project-details > div {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.project-description {
+  grid-column: span 3; /* If you want the description to span the entire width as well */
+}
+
+.project-issues-list {
+  grid-column: span 3;
+}
+
+.project-contributing-guidelines {
+  grid-column: span 3; /* This will make it span all columns */
+}
+
+.project-details button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2ea44f;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  grid-column: span 3; /* If you want the button to span the entire width as well */
+}
+
+.project-details button:hover {
+  background-color: #2a8f47;
+}
+
+.project-details button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.project-details > div {
+  margin-bottom: 10px;
+}
+
+.project-url a,
+.project-owner a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.project-url a:hover,
+.project-owner a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the project-issues-list */
+.project-issues-list {
+  padding: 10px;
+  border: 1px solid #e1e4e8; /* Light grey border to match other components */
+  border-radius: 6px; /* Rounded corners */
+  margin-top: 15px;
+  background-color: #f9f9f9; /* Slightly lighter background for distinction */
+}
+
+.project-issues-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove bullet points */
+}
+
+.project-issues-list li {
+  margin: 10px 0; /* Space between issues */
+  padding: 5px 10px; /* Some internal space for each issue */
+  border-radius: 4px; /* Optional: Slight rounding for each issue */
+  line-height: 1.5; /* Increased line-height for readability */
+}
+
+.project-issues-list li:hover {
+  background-color: #e6e6e6; /* Slightly darker background on hover */
+}
+
+/* GitHub uses rounded edges for buttons */
+/* .btn {
+  border-radius: 6px;
+  background-color: #2ea44f; 
+  color: white;
+}
+
+.btn:hover {
+  background-color: #2a8f47;
+} */
+
+.project-details .track-button {
+  background-color: green; /* Example color for tracking */
+  color: white;
+  /* Other styling */
+}
+
+.project-details .untrack-button {
+  background-color: rgb(40, 37, 37); /* Example color for untracking */
+  color: white;
+  /* Other styling */
+}
+
+/* Chatbot Modal styling */
+/* Chatbot Open Button */
+
+.chatbot {
+  position: fixed;
+  cursor: move;
+}
+.chatbot-trigger {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: rgba(50, 51, 56, 0.956);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-trigger:hover {
+  background-color: #050404;
+}
+
+/* Chatbot Modal Styles */
+.chat-modal {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between messages and input */
+  position: relative;
+  width: 300px;
+  min-width: 200px; /* Minimum width */
+  max-width: 600px; /* Maximum width */
+  min-height: 200px; /* Minimum height */
+  max-height: 600px; /* Maximum height */
+  overflow-y: auto;
+  z-index: 1001;
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  resize: both; /* Adjust as needed */
+}
+
+.chat-modal .messages {
+  flex-grow: 1;
+  position: relative;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  max-height: calc(100% - 60px);
+}
+
+.chat-modal input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e1e4e8; /* GitHub-like border */
+  border-top: none; /* Remove the top border to attach seamlessly with messages */
+  border-radius: 0 0 8px 8px; /* rounded bottom corners */
+}
+
+/* Input and Powered-by Container */
+.chat-modal .input-container {
+  border-top: 1px solid #e1e4e8; /* Line above input */
+}
+
+.chat-modal button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 1px 4px;
+  outline: inherit;
+  transition: color 0.3s ease;
+}
+
+.chat-modal button:hover {
+  color: #2a8f47;
+  text-decoration: underline;
+}
+
+.chat-modal .chat-modal-close-btn {
+  position: absolute;
+  top: 5px; /* Adjust as needed */
+  right: 5px; /* Adjust as needed */
+  border: none;
+  background: none;
+  color: inherit;
+  /* font: inherit; */
+  z-index: 1002;
+  font-size: 11px;
+  padding: 1px 4px;
+  outline: inherit;
+  transition: color 0.3s ease;
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+.chat-modal .chat-modal-close-btn:hover {
+  color: #2a8f47;
+  text-decoration: underline;
+}
+
+.chat-modal .powered-by {
+  text-align: center;
+  font-size: 0.7em;
+  margin: 10px 0;
+  color: #888;
+}
+
+.user-message {
+  background-color: #f5f5f5; /* Light gray for user messages */
+  padding: 8px;
+  border-radius: 8px;
+  margin: 5px 5px 5px 20%; /* Offset on the right */
+  clear: both;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #cce5ff; /* Light blue for bot messages */
+  padding: 8px;
+  border-radius: 8px;
+  margin: 5px 20% 5px 5px; /* Offset on the left */
+  clear: both;
+}
+
+.user-message::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 15px 15px 0; /* Size of arrow */
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+
+.bot-message::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0 0 15px 15px; /* Size of arrow */
+  border-color: transparent transparent #cce5ff transparent;
+}
+
+.message-header {
+  font-weight: bold;
+  padding: 4px;
+}
+
+.user-message-container,
+.bot-message-container {
+  margin: 8px 0;
+}
+
+.user-message-container .message-header {
+  text-align: right;
+  padding-right: 8px;
+}
+
+.bot-message-container .message-header {
+  text-align: left;
+  padding-left: 8px;
+}
+
+/* HelpPage:*/
+
+/* HelpSearchBar:*/
+.help-searchbar-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.help-main-header {
+  color: #24292e; /* GitHub's text color */
+  text-align: center;
+}
+
+.help-searchbar-container input {
+  width: 100%;
+  padding: 8px 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.suggestions-dropdown {
+  display: grid;
+  /* grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); Reduced min width */
+  gap: 5px; /* Reduced gap */
+  background-color: #fafbfc;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 5px; /* Reduced padding */
+}
+
+.suggestion-item {
+  background-color: white;
+  border: 1px solid #d1d5da;
+  padding: 8px; /* Adjusted padding */
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+  cursor: grab;
+}
+
+.suggestion-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-item strong {
+  color: #0366d6; /* GitHub's link color */
+}
+
+/* HelpFAQItem: styling */
+.help-faq-item-container {
+  background-color: white;
+  border: 1px solid #d1d5da;
+  padding: 8px; /* Adjusted padding */
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+/* HelpFAQList: styling */
+.help-faq-list-container {
+  display: contents;
+  /* grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); Adjusted for smaller columns */
+  gap: 5px; /* Reduced gap */
+  background-color: #fafbfc;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 5px; /* Reduced padding */
+}
+
+/*HelpCategoryList: */
+.help-category-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px; /* Reduced gap */
+  background-color: #fafbfc;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px; /* Reduced padding */
+  margin-bottom: 20px;
+}
+
+.help-category-item {
+  background-color: white;
+  border: 1px solid #d1d5da;
+  padding: 8px; /* Adjusted padding */
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: grab;
+  justify-content: center;
+  text-align: center;
+}
