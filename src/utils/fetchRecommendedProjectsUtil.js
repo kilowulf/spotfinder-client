@@ -5,10 +5,21 @@ export const fetchRecommendedProjectsUtil = async (
   user,
   searchRecommendedProjects
 ) => {
+  // check if user is null
+  if (!user) {
+    console.error("User object is null or undefined.");
+    return;
+  }
+
   const { experienceLevel, languages, frameworks } = user;
 
   if (!languages || !frameworks || !experienceLevel) {
     console.error("Missing user data for fetching recommended projects.");
+    console.error("User data received:", {
+      experienceLevel,
+      languages,
+      frameworks
+    });
     return;
   }
 
